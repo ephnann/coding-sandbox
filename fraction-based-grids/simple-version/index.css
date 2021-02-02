@@ -1,0 +1,36 @@
+.cards-wrapper {
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "card-1 card-2" "card-1 card-3" "card-4 card-4";
+}
+
+#card-1 {
+    border: 2px dashed red;
+    grid-area: card-1;
+}
+
+#card-2 {
+    border: 2px dashed pink;
+    grid-area: card-2;
+}
+
+#card-3 {
+    border: 2px dashed blue;
+    grid-area: card-3;
+}
+#card-4 {
+    border: 2px dashed purple;
+    grid-area: card-4;
+}
+
+@media only screen and (max-width: 800px) {
+    .cards-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: "card-1" "card-2" "card-3" "card-4";
+    }
+
+
+}
+
